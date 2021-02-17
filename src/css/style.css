@@ -36,22 +36,17 @@ body{
     line-height: 1.5;
   }
   
-  .contenedor-2{
-    border-radius: 8px;
-    width: 370px;
-    height: 321px;
-    margin: 5px;
-    padding: 21px;
+  .cambio{
+    margin: 10px;
   }
   
   .negrilla{
     border: 1px solid hsl(248, 32%, 49%);
-    background-color: hsl(248, 32%, 49%);
-    font-weight: 600;
+    background-color: hsl(248, 32%, 49%);    
     font-size: 12px;
     border-radius: 8px;
     width: 314px;
-    margin: 37px 4px 17px 4px;
+    margin: 61px 4px 17px 27px;
     padding: 14px 50px 14px 50px;
     justify-content: center;
   }
@@ -59,9 +54,8 @@ body{
     border: 1px solid white;
     background: white;
     border-radius: 8px;
-    width: 370px;
-    height: 321px;
-    margin: 5px;
+    width: 370px;    
+    margin: 5px 5px 5px 27px;
     padding: 21px;
   }
 
@@ -69,15 +63,39 @@ body{
     border: 1px solid  hsl(246, 25%, 77%);
     color: black;
     font-weight: 400;
-    border-radius: 4px;
-    margin: 6px;
+    border-radius: 4px;    
     padding: 13px;
     width: 316px;
+  }
+
+  .spanN{
+    color: hsl(0, 100%, 74%);
+    font-size: 10px;
+    margin-left: 193px;
+    font-style: italic;
+  }
+  .spanL{
+    color: hsl(0, 100%, 74%);
+    font-size: 10px;
+    margin-left: 193px;
+    font-style: italic;
+  }
+  .spanE{
+    color: hsl(0, 100%, 74%);
+    font-size: 10px;
+    margin-left: 167px;
+    font-style: italic;
+  }
+  .spanP{
+    color: hsl(0, 100%, 74%);
+    font-size: 10px;
+    margin-left: 197px;
+    font-style: italic;
   }
   
   .boton-claim{
     background-color: hsl(154, 59%, 51%);
-    border: 1px solid  hsl(246, 25%, 77%);
+    border: 1px solid hsl(154, 65%, 40%);
     color: white;
     font-weight: 500;
     border-radius: 4px;
@@ -86,6 +104,9 @@ body{
     padding: 15px 80px 15px 80px;
     justify-content: center;
     font-weight: bold;
+  }
+  .boton-claim:hover {
+    background-color: hsl(154, 68%, 59%);
   }
   
   .footer{
@@ -99,11 +120,15 @@ body{
     font-weight: bold;
   }
   
-  .text-danger{
-    color: red;
-  }
-
   .is-invalid{
     border: 2px solid hsl(0, 100%, 74%);
-    
+    background-image: url('../img/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position-x: 302px;
+    background-position-y: center;
+    background-size: 20px;      
+  }
+  
+  .id-email::-webkit-input-placeholder{
+    color: hsl(0, 100%, 74%);
   }
