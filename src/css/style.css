@@ -140,9 +140,9 @@
   border: 1px solid  hsl(246, 25%, 77%);
   background-image: none;
 }
-#mouseover{
-    color: : black;
-}
+/* #mouseover{
+    color:black;
+} */
 @media (max-width: 768px) {
     .flex{
         display: flex;
