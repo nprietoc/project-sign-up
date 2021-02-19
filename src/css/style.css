@@ -1,15 +1,12 @@
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: hsl(0, 100%, 74%);
-    background-image: url(../img/bg-intro-desktop.png);
-}
 .flex{
-    text-align: center;
     color: white;
     font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: 660px 660px;
     grid-template-rows: 569px;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(../img/bg-intro-desktop.png);
 }
 
 .contenedor-1{
@@ -24,14 +21,14 @@ body{
     margin: 23px 20px 3px 19px;
     font-size: 37px;
     line-height: 1.2;
+    text-align: center;
 }
   
 .parrafo{
     font-weight: 400;
     font-size: 12px;
     padding: 1px 8px 20px 80px;
-    margin: 18px 10px 19px 10px;
-    text-align: initial;
+    margin: 18px 10px 19px 10px;    
     line-height: 1.5;
 }
   
@@ -47,7 +44,7 @@ body{
     width: 314px;
     margin: 61px 4px 17px 27px;
     padding: 14px 50px 14px 50px;
-    justify-content: center;
+    text-align: center;
 }
 .contenedor-input{
     border: 1px solid white;
@@ -96,12 +93,12 @@ body{
     background-color: hsl(154, 59%, 51%);
     border: 1px solid hsl(154, 65%, 40%);
     color: white;
-    font-weight: 500;
+    font-size: 13px;
     border-radius: 4px;
     width: 344px;
     margin: 11px 12px 14px 14px;
     padding: 15px 80px 15px 80px;
-    justify-content: center;
+    text-align: center;
     font-weight: bold;
 }
 .boton-claim:hover {
@@ -112,6 +109,7 @@ body{
     color: hsl(249, 10%, 26%);
     margin: 1px;
     font-size: 8px;
+    text-align: center;
 }
   
 .link{
@@ -137,4 +135,45 @@ body{
 .is-valid{
   border: 1px solid  hsl(246, 25%, 77%);
   background-image: none;
+}
+@media (max-width: 400px) {
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contenedor-1{
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        width: auto;        
+    }
+    .titulo{
+        padding: 4px 14px 4px 14px;
+        margin: 66px 15px 3px 15px;
+        font-size: 30px;        
+    }
+    .parrafo{
+        font-size: 12px;
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+    }
+    .negrilla{
+        width: 333px;
+        margin-left: 7px;
+        margin-top: 21px;
+        padding: 14px 10px 14px 10px;
+    }
+    .contenedor-input{
+        width: 309px;
+        margin: 5px 5px 5px 8px;
+    }
+    .input{
+        width: 266px;
+    }
+    .boton-claim{
+        width: 293px;
+        margin: 11px 12px 14px 12px;
+        padding: 15px 50px 15px 50px;
+    }
 }

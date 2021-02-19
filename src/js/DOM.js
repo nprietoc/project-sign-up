@@ -5,6 +5,8 @@ const enviar = () => {
   //  const nameInput = document.getElementById('idName');
   console.log(cambioInput);
   var patron = /^[a-z]{3,16}$/;
+  var patronEmail = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+  var patronPassword = /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;
 
   cambioInput.forEach((element) => {
     if (element.value != "") {
@@ -15,6 +17,27 @@ const enviar = () => {
         } else {
           element.classList.add("is-invalid");
         }
+      } if (element.id == "idLast") {
+        if (patron.test(element.value)) {
+          element.classList.add("is-valid");
+          document.getElementById("spL").classList.add("hideProp");
+        } else {
+          element.classList.add("is-invalid");
+        }
+      } if (element.id == "idEmail") {
+        if (patronEmail.test(element.value)) {
+          element.classList.add("is-valid");
+          document.getElementById("spE").classList.add("hideProp");
+        } else {
+          element.classList.add("is-invalid");
+        }
+      } if (element.id == "idPassword") {
+        if (patronPassword.test(element.value)) {
+          element.classList.add("is-valid");
+          document.getElementById("spP").classList.add("hideProp");
+        } else {
+          element.classList.add("is-invalid");
+        }
       }
     } else {
       element.placeholder = element.id == "idEmail" ? "email@example.com" : "";
@@ -22,8 +45,7 @@ const enviar = () => {
       element.classList.add("id-email");
       document.getElementById("spN").innerHTML = "First Name cannot be empty";
       document.getElementById("spL").innerHTML = "Last Name cannot be empty";
-      document.getElementById("spE").innerHTML =
-        "Looks like this is not an email";
+      document.getElementById("spE").innerHTML = "Looks like this is not an email";
       document.getElementById("spP").innerHTML = "Password cannot be empty";
     }
   });
