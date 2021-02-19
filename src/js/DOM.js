@@ -1,5 +1,14 @@
 // const cambioInput = document.querySelectorAll('input')[0].placeholder = 'Error'
 
+// evento 
+// const mouse = document.getElementById('eventMouse');
+
+// mouse.addEventListener("mouseover", () => {
+//   mouse.textContent = "hola"
+// });
+
+
+
 const enviar = () => {
   const cambioInput = document.querySelectorAll(".input");
   //  const nameInput = document.getElementById('idName');
