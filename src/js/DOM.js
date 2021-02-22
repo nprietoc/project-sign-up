@@ -1,14 +1,5 @@
 // const cambioInput = document.querySelectorAll('input')[0].placeholder = 'Error'
 
-// evento 
-// const mouse = document.getElementById('eventMouse');
-
-// mouse.addEventListener("mouseover", () => {
-//   mouse.textContent = "hola"
-// });
-
-
-
 const enviar = () => {
   const cambioInput = document.querySelectorAll(".input");
   //  const nameInput = document.getElementById('idName');
@@ -60,17 +51,4 @@ const enviar = () => {
   });
 };
 
-// const nameInput = document.getElementById('idName')
-// const lastName = document.getElementById('idLast')
-// const email = document.getElementById('idEmail')
-// const Password = document.getElementById('idPassword')
 
-// const enviar = () => {
-//   if ( nameInput.value != "" ) {
-//     return nameInput.classList.add("is-valid");
-//   } else {
-//     nameInput.classList.add("is-invalid");
-//     nameInput.placeholder =  "" ;
-//     document.getElementById('spN').innerHTML = "First Name cannot be empty";
-//   }
-// }
